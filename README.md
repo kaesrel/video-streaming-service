@@ -4,35 +4,19 @@ This application/microservice is based on this tutorial: https://github.com/boot
 
 The application name is FlixTube. It is an application for video streaming, uploading, and storing videos.
 
-### Run Normally:
 
-Before running install dependencies:
+### Running Docker Compose
 ```bash
-    npm install
+docker-compose down && docker-compose up --build
 ```
+Stop the application:
+```bash
+docker-compose down
+```
+Use Robo 3T to 
+* Create connection to localhost:4000
+* create a new database called video-streaming
+* create a collection called videos
+* insert a document based on the contents in `db-fixture/videos.json`
 
-To start the microservice:
-```bash
-    node index.js
-```
-
-Or 
-```bash
-    npm start
-```
-
-Then point your browser at http://localhost:3000/video
-
-### Building the docker image
-```bash
-docker build -t video-streaming --file Dockerfile .
-```
-
-### Running the container from my Azure Container Registry
-```bash
-docker run -d -p 3000:3000 --name my-video-streaming pomregist1.azurecr.io/video-streaming:latest
-```
-Then use this command to see the url of the application
-```bash
-docker logs my-video-streaming
-```
+Point browser to http://localhost:4002/video?id=5d9e690ad76fe06a3d7ae416
