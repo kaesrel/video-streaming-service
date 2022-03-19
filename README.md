@@ -21,5 +21,5 @@ Use Robo 3T to
 Point browser to http://localhost:4001/video
 
 Also point browser to http://localhost:15672/ and then:
-* Username `guest`
-* Password `guest`
+* Username: `guest`
+* Password: `guest`
