@@ -11,10 +11,13 @@ variable admin_username {
   default = "linux_admin"
 }
 
-variable client_id {
+variable app_version { # Can't be called version! That's a reserved word.
+}
 
+variable client_id {
+  # default = "dff3826e-f69a-48ba-8b24-0333453f8be6"
 }
 
 variable client_secret {
-
+  # default = "pzSrSa.1_mOjpWaeFPZDCb1u-ZwQrQo5Vq"
 }

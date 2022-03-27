@@ -1,0 +1,3 @@
+[submodule "bootstrapping_video_service"]
+	path = bootstrapping_video_service
+	url = https://bitbucket.org/kaesrel/bootstrapping_video_service/src/master/
