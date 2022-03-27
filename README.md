@@ -23,3 +23,30 @@ Point browser to http://localhost:4001/video
 Also point browser to http://localhost:15672/ and then:
 * Username: `guest`
 * Password: `guest`
+
+### Running Terraform Scripts
+```bash
+cd working/scripts
+```
+
+Initiate terraform 
+```bash
+terraform init
+```
+
+Build resources
+```bash
+terraform apply
+```
+
+Update resources
+```bash
+terraform apply -auto-approve
+```
+
+Remove resources
+```bash
+terraform destroy
+```
+
+
